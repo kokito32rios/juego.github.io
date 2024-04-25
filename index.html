@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío de Calidad de Datos</title>
+    <link rel="stylesheet" href="./juego.css">
+</head>
+<body>
+    <div class="container2" id="inicio-container">
+        <h2>Instrucciones del desafío</h2>
+        <p>EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA-EN FASE DE PRUEBA</p>
+        <h1>Ingrese sus datos</h1>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="cargo" placeholder="Cargo">
+        <button onclick="iniciarJuego()">Comenzar</button>
+    </div>
+
+    <div class="container" id="juego-container" style="display: none;">
+        <h1>Desafío de Calidad de Datos</h1>
+        <div id="tablero"></div>
+        <div id="casilla-actual"></div>
+        <button onclick="verDesafio()">Iniciar Desafío</button>
+        <div id="pregunta"></div>
+        <div id="respuestas-container"></div> <!-- Cambiado de select a div para respuestas -->
+        <button id="verificarRespuesta" onclick="verificarRespuesta()" disabled>Enviar Respuesta</button>
+        <div id="resultado"></div>
+        <div id="tiempo-restante"></div>
+        <div id="puntuacion-container">Puntuación: <span id="puntuacion-usuario">0 puntos</span></div>
+    </div>
+
+    <div class="container" id="finalizacion-container" style="display: none;">
+        <h1>¡Desafío Completado!</h1>
+        <div id="mensaje-final"></div>
+    </div>
+
+    <script src="./juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    background-image: url(./NosotrosDitransa-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #D90912;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0E2841;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#tablero {
+    margin: 20px 0;
+}
+
+.casilla {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid #ccc;
+    margin: 2px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+.jugador {
+    background-color: #0E2841;
+    color: #fff;
+}
+
+/* Agrega estos estilos al final del archivo CSS */
+
+#finalizacion-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    display: none; /* Ocultar el contenedor al principio */
+    text-align: center;
+}
+
+
+#pregunta, #resultado, #casilla-actual, #tiempo-restante {
+    margin-top: 20px;
+}
